@@ -1,5 +1,5 @@
 # Usa una imagen base con Python
-FROM python:3.13-slim
+FROM python:3.8-slim
 
 # Establece el directorio de trabajo dentro del contenedor
 WORKDIR /uniovi-gsdpi-bokeh-template
