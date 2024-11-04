@@ -49,7 +49,7 @@ python boostrap.py
 Exec this command to build:
 
 ```
-$ docker build -t uniovi-gsdpi-bokeh-template .
+$ docker build -t uniovi-gsdpi-bokeh-template:1.0.0 .
 ```
 
 - **STEP05**: run the docker container
@@ -57,13 +57,13 @@ $ docker build -t uniovi-gsdpi-bokeh-template .
 Exec this command to run the container:
 
 ```
-$ docker run --rm --name uniovi-gsdpi-bokeh-template -p 5006:5006 uniovi-gsdpi-bokeh-template
+$ docker run --rm --name uniovi-gsdpi-bokeh-template -p 5006:5006 uniovi-gsdpi-bokeh-template:1.0.0
 ```
 
 - **STEP06**: tag image docker image to be uploaded to azure
 
 ```
-$ docker tag uniovi-gsdpi-bokeh-template avibdocker.azurecr.io/uniovi-gsdpi-bokeh-template:1.0.0
+$ docker tag uniovi-gsdpi-bokeh-template:1.0.0 avibdocker.azurecr.io/uniovi-gsdpi-bokeh-template:1.0.0
 ```
 
 - **STEP07**: push image docker image
